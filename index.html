@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trainee Task2</title>
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+</head>
+<body>
+	<header>
+       <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a href="#">Some action</a></li>
+                        <li><a href="#">Some other action</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">Hover me for more options</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Second level</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#">Even More..</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">3rd level</a></li>
+                                        <li><a href="#">3rd level</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Second level</a></li>
+                                <li><a href="#">Second level</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown 2<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    </header>
+    <aside>
+        <div class="dropdown">
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Submenu 1-1</a></li>
+                  <li><a href="#">Submenu 1-2</a></li>
+                  <li><a href="#">Submenu 1-3</a></li> 
+                </ul>
+              </li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu 3 <span class="caret"></span></a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a href="#">Submenu 1-1</a></li>
+                        <li><a href="#">Submenu 1-2</a></li>
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">Submenu 1-3</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Submenu 2-1</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#">Submenu 2-2</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Submenu 3-1</a></li>
+                                        <li><a href="#">Submenu 3-2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Submenu 2-3</a></li>
+                                <li><a href="#">Submenu 2-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+              </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section>
+    <div id="carouselll">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img alt="First slide" src="img/1.jpg" data-holder-rendered="true">
+            <div class="carousel-caption">
+                <h3>Desert</h3>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="Second slide" src="img/2.jpg"  data-holder-rendered="true">
+             <div class="carousel-caption">
+                <h3>Hydrangeas</h3>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="Third slide" src="img/3.jpg"  data-holder-rendered="true">
+             <div class="carousel-caption">
+                <h3>Jellyfish</h3>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="Fourth slide" src="img/4.jpg"  data-holder-rendered="true">
+             <div class="carousel-caption">
+                <h3>Lighthouse</h3>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="btn btn-lg btn-default" onclick="autoplay()">Autoplay OFF</div>
+      </div>
+    </section>
+
+    <script src="scripts/jquery-1.11.2.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
